@@ -1,16 +1,16 @@
 var once = require('once')
 
-function callbox (fn) {
+function promise (fn) {
   return new Promise((resolve, reject) => {
-    function done (err, res) {
+    function callback (err, res) {
       setImmediate(() => {
         if (err) reject(err)
         else resolve(res)
       })
     }
 
-    fn(once.strict(done))
+    fn(once.strict(callback))
   })
 }
 
-module.exports = callbox
+module.exports = promise
