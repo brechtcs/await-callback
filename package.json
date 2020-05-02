@@ -6,7 +6,9 @@
   "scripts": {
     "test": "tape test.js && standard"
   },
-  "dependencies": {},
+  "dependencies": {
+    "once": "^1.4.0"
+  },
   "devDependencies": {
     "standard": "^14.3.3",
     "tape": "^5.0.0"
