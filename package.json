@@ -1,0 +1,32 @@
+{
+  "name": "await-callback",
+  "version": "1.0.0",
+  "description": "Wrap and await callback code",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js && standard"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^14.3.3",
+    "tape": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brechtcs/await-callback.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brechtcs/await-callback/issues"
+  },
+  "homepage": "https://github.com/brechtcs/await-callback#readme",
+  "keywords": [
+    "callback",
+    "promise",
+    "async",
+    "await",
+    "encapsulate",
+    "wrap"
+  ],
+  "author": "Brecht Savelkoul <brecht.savelkoul@alumni.lse.ac.uk>",
+  "license": "Apache-2.0"
+}
