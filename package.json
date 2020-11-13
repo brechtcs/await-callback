@@ -1,12 +1,13 @@
 {
   "name": "await-callback",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Wrap and await callback code",
   "main": "index.js",
   "scripts": {
     "test": "tape test.js && standard"
   },
   "dependencies": {
+    "configure-this": "^1.0.0",
     "once": "^1.4.0"
   },
   "devDependencies": {

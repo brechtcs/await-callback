@@ -33,3 +33,15 @@ test('double done', async t => {
     t.end()
   }
 })
+
+test('disable once', async t => {
+  var p = promise.bind({ once: false })
+  var double = p(done => {
+    done(null, 1)
+    done(null, 2)
+  })
+
+  await double
+  t.ok(true)
+  t.end()
+})
